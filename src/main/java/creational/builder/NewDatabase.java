@@ -56,7 +56,7 @@ public class NewDatabase {
             return this;
         }
         // Step 5 - Add a validation method
-        boolean isValid () {
+        public boolean isValid () {
             if(newdb.name==null) {
                 return false;
             }
