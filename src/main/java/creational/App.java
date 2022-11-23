@@ -1,4 +1,4 @@
-package org.example;
+package creational;
 
 /**
  * Hello world!

@@ -1,2 +1,5 @@
-package creational.builder;public enum DatabaseType {
+package creational.builder;
+
+public enum DatabaseType {
+    MYSQL,MONGO
 }
