@@ -33,12 +33,22 @@ public class BackgroundObject implements GraphicalObject{
         this.pixels=someHeavyMethod();
     }
 
+    public BackgroundObject(Integer x, Integer y, Integer width, Integer height, String color, GraphicalObjectType type, List<Integer> pixels) {
+        this.x = x;
+        this.y = y;
+        this.width = width;
+        this.height = height;
+        this.color = color;
+        this.type = type;
+        this.pixels = pixels;
+    }
+
     private List<Integer> someHeavyMethod() {
         return Collections.emptyList();
     }
 
     // Step 3 - implement the clone method
     public BackgroundObject clone() {
-        return new BackgroundObject(x,y,width,height,color,type);
+        return new BackgroundObject(x,y,width,height,color,type,pixels);
     }
 }
