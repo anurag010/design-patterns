@@ -15,7 +15,10 @@ public class GameObjectTest {
 
         assertNotNull("If clone is called, prototype should not be null", clone);
         assertEquals("If X is called, it should be same as prototype",100,(int)clone.getX());
+//        assertEquals("checking if clone and prototype refer to the same memory address",prototype,clone);
 
+        System.out.println(prototype);
+        System.out.println(clone);
         // Step 5 - modify the clone
         clone.setColor("blue");
         clone.setHeight(500);
